@@ -13,9 +13,35 @@ export class MenuComponent {
   public menuItem: MenuItem[] | undefined;
 
   ngOnInit() {
-      this.menuItem = [
-          { label: 'New', icon: 'pi pi-plus' },
-          { label: 'Search', icon: 'pi pi-search' }
-      ];
+    this.menuItem = [
+      { 
+        label: 'Pipes de Angular', 
+        icon: 'pi pi-desktop',
+        items: [
+          {
+            label: 'Textos y Fechas',
+            icon: 'pi pi-aling-left'
+          },
+          {
+            label: 'Números',
+            icon: 'pi pi-dollar'
+          },  
+          {
+            label: 'No Comunes',
+            icon: 'pi pi-globe'
+          }               
+        ] 
+      },
+      {
+        label: 'Pipes Personalizados',
+        icon: 'pi pi-cog',
+        items: [
+          {
+            label: 'Otro Elemento', 
+            icon: 'pi pi-cog',
+          }
+        ]
+      }    
+    ];
   }
 }
