@@ -20,7 +20,7 @@ export class MenuComponent {
         items: [
           {
             label: 'Textos y Fechas',
-            icon: 'pi pi-aling-left'
+            icon: 'pi pi-align-left'
           },
           {
             label: 'Números',
